@@ -8,6 +8,6 @@ def articles_list(request):
     return render(request , 'articles/articleslist.html', args)
 
 def articles_detile(request , article_slug):
-    # return HttpResponse(slug)
+    # return HttpResponse(article_slug)
     article = models.Article.objects.get(slug = article_slug)
     return render(request , 'articles/articles_detile.html',{'article_detile':article})
