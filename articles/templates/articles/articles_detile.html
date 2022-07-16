@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{article_detile.title}}
+{% endblock %}
+
+{% block content%}
+<div class="article_detile">
+  <div class="article">
+    <h1>{{article_detile.title}}</h1>
+    <p>{{article_detile.body}}</p>
+    <p>{{article_detile.time_create}}</p>
+  </div>
+</div>
+{% endblock %}

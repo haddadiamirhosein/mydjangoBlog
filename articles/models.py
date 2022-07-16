@@ -13,3 +13,6 @@ class Article(models.Model):
 
     def snippet(self):
         return self.body[:50]+' ...'
+
+    def time_create(self):
+        return self.date
