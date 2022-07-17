@@ -6,4 +6,9 @@
 
 {% block content%}
 <h1>sign up</h1>
+<form class="site_form" action="/accounts/signup/" method="post">
+  {{form}}
+  {% csrf_token %}
+  <input type="submit" name="" value="submit">
+</form>
 {% endblock %}
