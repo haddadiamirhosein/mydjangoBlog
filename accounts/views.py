@@ -23,6 +23,8 @@ def login_views(request):
             #login User
             user = form.get_user()
             login(request,user)
+            if "nextt" in request.POST:
+                return redirect(request.POST.get('nextt'))
             return redirect('articles_urls:list')
     else:
         form = AuthenticationForm()
