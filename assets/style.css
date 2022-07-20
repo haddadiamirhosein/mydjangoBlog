@@ -19,3 +19,73 @@ a,a:hover,a:visited{
   color: white;
   text-decoration: none;
 }
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.wrapper{
+  max-width:960px;
+  margin:0 auto;
+}
+div.wrapper h1{
+  text-align:center;
+  margin:100px auto;
+  font-size:2.4em;
+}
+nav button{
+  background: none;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  font-size: 1em;
+}
+.articles{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.article{
+  padding: 10px;
+  border: 1px solid #00dba0;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.article h2{
+  font-size: 1.2em;
+}
+
+.article .author{
+  padding: 10px;
+  background-color: #00dba0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  color: #0f121f;
+}
+
+.article_detile .article{
+  padding:1rem;
+
+}
+.article_detile img{
+  width: 100%;
+}
+
+.article_detile h1{
+  text-align: center;
+}
+
+.article_detile p {
+  text-align: center;
+}

@@ -5,12 +5,15 @@
     {% endblock %}
 
     {% block content%}
-    <div class="containar">
-      <h1>articles_list</h1>
-      {% for ar in article %}
-      <h2> <a href="{% url 'articles_urls:detail' article_slug=ar.slug %}">{{ar.title}}</a> </h2>
-      <p>{{ar.snippet}}</p>
-      <p>{{ar.date}}</p>
-      {% endfor %}
-    </div>
+    <h1>articles list</h1>
+      <div class="articles">
+        {% for ar in article %}
+            <div class="article">
+                <h2> <a href="{% url 'articles_urls:detail' article_slug=ar.slug %}">{{ar.title}}</a> </h2>
+                <p>{{ar.snippet}}</p>
+                <p>{{ar.date}}</p>
+                <p class="author">created by {{ar.author}}</p>
+            </div>
+        {% endfor %}
+      </div>
     {% endblock %}
