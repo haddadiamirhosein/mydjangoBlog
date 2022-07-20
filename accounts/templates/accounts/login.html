@@ -6,7 +6,7 @@
 
 {% block content%}
     <h1>login</h1>
-    <form class="" action="{% url 'accounts_urls:login' %}" method="post">
+    <form class="site_form" action="{% url 'accounts_urls:login' %}" method="post">
       {{form}}
       {% csrf_token %}
       {% if request.GET.next %}

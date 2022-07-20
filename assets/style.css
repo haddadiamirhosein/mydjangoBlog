@@ -89,3 +89,55 @@ nav button{
 .article_detile p {
   text-align: center;
 }
+
+.site_form{
+  margin-top: 5rem;
+  padding: 20px;
+  border:1px solid #00dba0;
+}
+
+.site_form input,textarea{
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+a.highlight{
+  border: 1px solid #00dba0;
+  padding:10px;
+  border-radius:4px;
+  color: #00dba0;
+}
+
+.helptext,.helptext ul{
+  margin-bottom:10px;
+  color: gray;
+  font-size: 0.9em;
+  display: block;
+}
+
+.site_form label{
+  color: #00dba0;
+}
+
+.errorlist li{
+  padding:10px;
+  list-style-type:none;
+  border:1px solid #ff5722;
+  color:#ff5722;
+  margin:10px 0;
+}
+.errorlist{padding:0;}
+.site_form input[type="submit"]{
+  border:0;
+  color:#fff;
+  font-size:1.2em;
+  background:#00dba0;
+  border-radius:4px;
+  margin:10px 0;
+  cursor: pointer;
+}
+
+.site_form input[type="submit"]:hover{
+  background-color: red;
+}
