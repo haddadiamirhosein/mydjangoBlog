@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
   {{user}}
@@ -15,4 +16,5 @@
       <input type="submit" name="" value="create">
     </form>
   </div>
+  <script src="{% static 'slugify.js' %}">  </script>
 {% endblock %}
